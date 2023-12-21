@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #26b462;
+}
+
 h2 {
     color: #139e4c;
     font-size: 6em;
@@ -80,6 +84,7 @@ nav a {
     font-variant: all-small-caps;
     font-size: 1.4em;
     font-weight: 700;
+    color: black;
 }
 
 /*-----------FOOTER----------------------------*/
@@ -104,14 +109,58 @@ main {
     flex-wrap: wrap;
     max-width: 1200px;
     gap: 60px;
+    margin: 70px 0;
 }
 
-article {
+section {
+    height: 55vh;
+    display: flex;
+}
+
+#bienvenida {
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     max-width: 600px;
+    gap: 30px;
+}
+
+#atid-activo {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+#atid-activo #galeria-miniaturas{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#galeria-miniaturas img {
+    width: 45%;
+    height: auto;
+}
+
+#atid-activo article {
+    gap: 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+#atid-activo p {
+    font-size: 2em;
+    font-size: 1.5em;
+}
+
+#link-atid-activo {
+    color: #26b462;
+    font-weight: 700;
 }
 
 /*-----------MAIN NOSOTROS---------------------------*/
@@ -136,6 +185,15 @@ article {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: black;
+}
+
+#contacto a {
+    color: black;
+}
+
+#contacto a:hover {
+    color: #26b462;
 }
 
 h4 {
@@ -143,4 +201,8 @@ h4 {
     font-style: italic;
     font-size: 2em;
     letter-spacing: 3px;
+} 
+
+#title-contacto {
+    max-width: 580px;
 }
