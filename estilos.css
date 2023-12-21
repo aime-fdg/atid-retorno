@@ -4,6 +4,12 @@
 
 /*-----------GENERALES-------------------------*/
 
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
 body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
@@ -85,6 +91,7 @@ footer {
     display: flex;
     justify-content: space-around;
     color: #26b462;
+    padding: 20px 0;
 }
 
 /*-----------MAIN INDEX------------------------------*/
@@ -92,12 +99,26 @@ footer {
 main {
     display: flex;
     align-content: center;
+    justify-content: center;
     flex-direction: row;
-    height: 87vb;
     flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 60px;
 }
 
 article {
     width: 100%;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*-----------MAIN NTOS------------------------------*/
+
+.about {
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    max-width: 450px;
 }
