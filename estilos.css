@@ -58,6 +58,7 @@ h3 {
 
 p {
     font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
 }
 
 /*-----------HEADER----------------------------*/
@@ -73,6 +74,7 @@ header {
     width: 100%;
     max-width: 1200px;
     justify-content: space-between;
+    margin: 0 20px;
 }
 
 nav {
@@ -109,11 +111,11 @@ main {
     flex-wrap: wrap;
     max-width: 1200px;
     gap: 60px;
-    margin: 70px 0;
+    margin: 70px 30px;
 }
 
 section {
-    height: 55vh;
+    min-height: 55vh;
     display: flex;
 }
 
@@ -126,14 +128,13 @@ section {
 }
 
 #atid-activo {
-    flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 #atid-activo #galeria-miniaturas{
     display: flex;
-    width: 50%;
+    width: 70%;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
@@ -166,6 +167,8 @@ section {
 /*-----------MAIN NOSOTROS---------------------------*/
 
 .about {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 25px;
@@ -205,4 +208,16 @@ h4 {
 
 #title-contacto {
     max-width: 580px;
+}
+
+@media screen and (max-width: 700px) {
+
+    #atid-activo {
+        flex-direction: column-reverse;
+    }
+
+    #contacto {
+        gap: 20px;
+    }
+
 }
