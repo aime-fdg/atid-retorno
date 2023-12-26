@@ -1,27 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.25 50.73">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #0da54f;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #a7a9ad;
-      }
-
-      .cls-3 {
-        fill: #4277d0;
-      }
-    </style>
-  </defs>
-  <g id="Capa_1-2" data-name="Capa 1">
-    <polygon class="cls-2" points="25.57 0 74.15 0 117.71 24.97 74.15 50.73 25.57 50.73 54.9 49.14 93.28 26.56 0 25.37 93.28 23.64 53.7 1.59 25.57 0"/>
-    <polygon class="cls-3" points="91.95 0 114.62 0 158.18 24.97 114.62 50.73 92.21 50.73 134.98 25.37 91.95 0"/>
-    <polygon class="cls-1" points="131.02 0 153.69 0 197.25 24.97 153.69 50.73 131.29 50.73 174.05 25.37 131.02 0"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_2_00000114074359981647654690000003121493337292791175_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100.7 50.7"
+	 style="enable-background:new 0 0 100.7 50.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A7A9AD;}
+	.st1{fill:#4277D0;}
+	.st2{fill:#0DA54F;}
+</style>
+<g id="Capa_1-2">
+	<polygon class="st0" points="0,0 16.6,0 46.3,25 16.6,50.7 1.2,50.7 3.4,49.1 29.7,26.6 0,25.4 29.7,23.6 2.6,1.6 	"/>
+	<polygon class="st1" points="28.7,0 44.2,0 74,25 44.2,50.7 28.9,50.7 58.1,25.4 	"/>
+	<polygon class="st2" points="55.4,0 70.9,0 100.7,25 70.9,50.7 55.6,50.7 84.8,25.4 	"/>
+</g>
 </svg>
