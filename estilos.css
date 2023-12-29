@@ -95,17 +95,6 @@ nav a {
     display: none;
 }
 
-/*-----------FOOTER----------------------------*/
-
-footer {
-    background-color: #b5dcc8;
-    width: 100%;
-    font-size: 0.8em;
-    display: flex;
-    justify-content: space-around;
-    color: #26b462;
-    padding: 20px 0;
-}
 
 /*-----------MAIN INDEX------------------------------*/
 
