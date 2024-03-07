@@ -12,16 +12,9 @@
 body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('img/background.svg');
-    background-size: 100vh;
-    background-repeat: repeat-y;
-    background-position-x: -125px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-size: 100vh;
-    min-height: 100vh;
     justify-content: space-between;
 }
 
@@ -30,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: #26b462;
+    color: #139e4c;
 }
 
 h2 {
@@ -44,22 +37,33 @@ h2 {
 h3 {
     background-color: #139e4c;
     color: white;
-    width: fit-content;
-    display: inline-flex;
-    padding: 4px 10px 8px 10px;
-    justify-content: center;
-    align-items: center;
+    padding: 4px 17px 11px 20px;
     border-radius: 5px;
-    line-height: normal;
     font-variant: all-small-caps;
-    font-size: 2em;
+    font-size: 3em;
+    text-align: center;
+}
+
+h4 {
+    font-variant: all-small-caps;
+    color: #b3cedf;
+    font-size: 6em;
+    text-align: center;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
     text-wrap: pretty;
 }
+
+#whatsapp-flotante {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 100px;
+    z-index: 20;
+}
+
 
 /*-----------HEADER----------------------------*/
 header {
@@ -67,6 +71,9 @@ header {
     width: 100%;
     justify-content: center;
     padding: 20px 0;
+    position: fixed;
+    z-index: 20;
+    background: linear-gradient(180deg, rgba(228, 241, 235, 0.63) 25.5%, rgba(228, 241, 235, 0.00) 100%);
 }
 
 #header-contain {
@@ -76,7 +83,17 @@ header {
     justify-content: space-between;
     padding: 0 20px;
     box-sizing: border-box;
-    position: absolute;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#header-contain a {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.7em;
+    font-variant: all-small-caps;
+    font-weight: bold;
 }
 
 nav {
@@ -96,7 +113,7 @@ nav a {
 }
 
 
-/*-----------MAIN INDEX------------------------------*/
+/*-----------BIENVENIDA------------------------------*/
 
 main {
     display: flex;
@@ -104,43 +121,112 @@ main {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1200px;
-    gap: 60px;
-    margin: 70px 30px;
-    min-height: 700px;
+    width: 100%;
 }
 
 section {
-    min-height: 55vh;
+    min-height: 50vh;
     display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
 }
 
 #bienvenida {
     justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    gap: 30px;
-    margin-left: 220px;
+    padding-top: 170px;
+    background-image: url('img/background.svg');
+    background-size: 20%;
+    background-position: bottom;
 }
+
+#bienvenida div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+    gap: 30px;
+}
+
+/*-----------DATOS-----------------------------------*/
+
+#relleno-fondo {
+    background-image: url(img/background.svg);
+    background-size: 20%;
+    background-position: top;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 110px;
+    z-index: 10;
+}
+
+#relleno-fondo img {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#datos {
+    background-color: #e4f1eb;
+    padding: 320px 50px 150px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+#about article {
+    max-width: 900px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+/*-----------ORIGEN-----------------------------------*/
+
+#origen {
+    justify-content: center;
+}
+
+#origen div {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    max-width: 1200px;
+    padding: 50px;
+}
+
+#origen article {
+    display: grid;
+    gap: 40px;
+}
+
+#origen ul {
+    display: grid;
+    gap: 20px;
+    font-weight: 500;
+}
+
+#origen li {
+    font-size: 1.2em;
+}
+
+#origen li::before {
+    content: "•";
+    color: #b3cedf;
+    width: 20px;
+}
+
+/*-----------ATID ACTIVO-----------------------------------*/
 
 #atid-activo {
     align-items: center;
     gap: 30px;
-}
-
-#atid-activo #galeria-miniaturas {
-    display: flex;
-    width: 70%;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-#galeria-miniaturas img {
-    width: 45%;
-    height: auto;
 }
 
 #atid-activo article {
@@ -149,131 +235,179 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 700px;
 }
 
 #atid-activo p {
-    font-size: 2em;
-    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#atid-activo a {
+    font-weight: 600;
+    color: black;
+}
+
+#atid-activo #galeria-miniaturas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#galeria-miniaturas img {
+    width: 25%;
+    height: 400px;
+    height: auto;
 }
 
 #link-atid-activo {
-    color: #26b462;
+    color: #139e4c;
     font-weight: 700;
 }
 
-/*-----------MAIN NOSOTROS---------------------------*/
+/*-----------ATID ACTIVO-----------------------------------*/
 
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-    max-width: 450px;
+#nuestro-equipo {
+    margin: 100px 0;
+    gap: 50px;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
-/*-----------MAIN CONTACTO---------------------------*/
+#nuestro-equipo ul {
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+#nuestro-equipo li {
+    gap: 5px;
+    display: flex;
+    width: 313px;
+    flex-direction: column;
+}
+
+#nuestro-equipo p {
+    font-weight: 400;
+}
+
+#nuestro-equipo img {
+    width: 100%;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+#galeria-miniaturas .foto {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+#galeria-miniaturas .foto:nth-child(1) {
+    background-image: url(img/galeria-1-thumbnail.jpg);
+}
+#galeria-miniaturas .foto:nth-child(2) {
+    background-image: url(img/galeria-2-thumbnail.jpg);
+}
+#galeria-miniaturas .foto:nth-child(3) {
+    background-image: url(img/galeria-3-thumbnail.jpg);
+}
+#galeria-miniaturas .foto:nth-child(4) {
+    background-image: url(img/galeria-4-thumbnail.jpg);
+}
+#galeria-miniaturas .foto:nth-child(5) {
+    background-image: url(img/galeria-5-thumbnail.jpg);
+}
+#galeria-miniaturas .foto:nth-child(6) {
+    background-image: url(img/galeria-6-thumbnail.jpg);
+}
+#galeria-miniaturas .foto:nth-child(7) {
+    background-image: url(img/galeria-7-thumbnail.jpg);
+}
+
+/*-----------CONTACTO-----------------------------------*/
+
 #contacto {
     display: flex;
-    justify-content: space-evenly;
+    gap: 50px;
     flex-direction: column;
-    font-size: 1.5em;
-    font-weight: 700;
-    gap: 20px;
+    padding: 50px;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+#contacto span {
+    color:#139e4c;
+}
+
+#contacto ul {
+    display: flex;
+    padding: 50px 0;
+    border-top: 2px solid #139E4C;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #contacto li {
     display: flex;
     align-items: center;
+    max-width: 400px;
     gap: 10px;
-    color: black;
 }
 
-#contacto a {
-    color: black;
+@media screen and (max-width: 1000px) {
+    #origen div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
-#contacto a:hover {
-    color: #26b462;
-}
-
-h4 {
-    font-weight: 400;
-    font-style: italic;
-    font-size: 2em;
-    letter-spacing: 3px;
-}
-
-#title-contacto {
-    max-width: 580px;
-}
-
-@media screen and (max-width: 700px) {
-
-    #atid-activo {
-        flex-direction: column-reverse;
+@media screen and (max-width: 860px) {
+    #bienvenida {
+        padding-top: 235px;
     }
 
-    #atid-activo #galeria-miniaturas {
-        width: 90%;
+    #about article {
+        gap: 50px;
     }
 
-    #galeria-miniaturas img {
-        width: 48%;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
+    #nuestro-equipo {
+        margin-bottom: 0;
     }
 
     #header-contain {
         justify-content: center;
-        position: relative;
     }
-
-    #logo-desktop {
-        display: none;
-    }
-
-    #logo-mobile {
-        display: block;
-        margin-top: 20px;
-    }
-
-    #bienvenida {
-        margin-left: 0;
-    }
-
-    main {
-        margin-top: 10px;
-    }
-
 }
 
-@media screen and (max-width: 500px) {
-
-    body {
-        background-size: 130%;
-        background-position-x: -280px;
+@media screen and (max-width: 600px) {
+    #about article {
+        gap: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    #atid-activo #galeria-miniaturas {
-        width: 100%;
+    #header-contain p {
+        width: min-content;
     }
 
-    #galeria-miniaturas img {
-        width: 100%;
+    #nuestro-equipo img {
+        height: auto;
     }
 
-    #title-contacto h2 {
-        color: #139e4c;
-        font-size: 4em;
-        font-variant: all-small-caps;
-        margin: 10px 0;
-        line-height: 48px;
-        font-weight: 900;
-        margin-bottom: 30px;
+    #whatsapp-flotante {
+        bottom: 50px;
+        right: 15%;
     }
 
 }
