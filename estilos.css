@@ -210,16 +210,27 @@ section {
     display: grid;
     gap: 20px;
     font-weight: 500;
+    list-style: none;
+    margin-left: 0; 
 }
 
 #origen li {
     font-size: 1.2em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-#origen li::before {
-    content: "•";
-    color: #b3cedf;
+.bullet {
     width: 20px;
+    height: 20px;
+    background-color: #139E4C;
+    flex-shrink: 0;
+    border-radius: 100%;
+}
+
+#origen li:nth-child(2n) .bullet{
+    background-color: #b3cedf;
 }
 
 #origen img  {
@@ -399,6 +410,7 @@ h5 {
     #header-contain {
         justify-content: center;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -426,9 +438,17 @@ h5 {
         width: unset;
         min-width: unset;
     }
+
+    #origen div {
+        padding: 20px;
+    }
+
+    #datos {
+        padding: 320px 20px 150px 20px;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 380px) {
     h2,h4 {
         font-size: 5em;
     }
