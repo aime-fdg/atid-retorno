@@ -222,6 +222,11 @@ section {
     width: 20px;
 }
 
+#origen img  {
+    max-width: 400px;
+    width: 100%;
+}
+
 /*-----------ATID ACTIVO-----------------------------------*/
 
 #atid-activo {
@@ -252,6 +257,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    width: 100%;
 }
 
 #galeria-miniaturas img {
@@ -303,7 +309,8 @@ h5 {
 }
 
 #galeria-miniaturas .foto {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -341,7 +348,7 @@ h5 {
     align-items: center;
     box-sizing: border-box;
     text-align: center;
-    
+    width: 100%;
 }
 
 #contacto span {
@@ -362,6 +369,11 @@ h5 {
     align-items: center;
     max-width: 400px;
     gap: 10px;
+}
+
+#direccion {
+    width: min-content;
+    min-width: 260px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -409,5 +421,34 @@ h5 {
         bottom: 50px;
         right: 15%;
     }
+    
+    #direccion {
+        width: unset;
+        min-width: unset;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    h2,h4 {
+        font-size: 5em;
+    }
+
+    #header-contain a {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #header-contain {
+        gap: 10px;
+    }
+
+    #bienvenida {
+        padding-top: 340px;
+    }
 }
