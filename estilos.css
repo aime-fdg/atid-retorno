@@ -73,7 +73,7 @@ header {
     padding: 20px 0;
     position: fixed;
     z-index: 20;
-    background: linear-gradient(180deg, rgba(228, 241, 235, 0.63) 25.5%, rgba(228, 241, 235, 0.00) 100%);
+    background: linear-gradient(180deg, rgba(228, 241, 235, 0.80) 78%, rgba(228, 241, 235, 0.00) 100%);
 }
 
 #header-contain {
@@ -430,8 +430,9 @@ h5 {
     }
 
     #whatsapp-flotante {
-        bottom: 50px;
-        right: 15%;
+        bottom: 5%;
+        right: 5%;
+        width: 70px;
     }
     
     #direccion {
@@ -446,9 +447,48 @@ h5 {
     #datos {
         padding: 320px 20px 150px 20px;
     }
+
+    #header-contain {
+        gap: 10px;
+    }
+    {}
+    p {
+        font-size: 1.1em;
+        padding: 0 20px;
+    }
+
+    #logo-desktop {
+        height: 100px;
+    }
+
+    #bienvenida div {
+        padding: 0 20px;
+    }
+
+    #relleno-fondo img {
+        height: 290px;
+    }
+
+    #datos {
+        padding: 190px 30px 40px;
+    }
+
+    h2,h4 {
+        line-height: 60px;
+    }
+
+    footer div {
+        display: grid;
+        gap: 40px;
+    }
+
+    footer ul {
+        justify-content: flex-start;
+        text-align: left;
+    }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 350px) {
     h2,h4 {
         font-size: 5em;
     }
@@ -464,11 +504,4 @@ h5 {
         justify-content: center;
     }
 
-    #header-contain {
-        gap: 10px;
-    }
-
-    #bienvenida {
-        padding-top: 340px;
-    }
 }
