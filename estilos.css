@@ -71,9 +71,8 @@ header {
     width: 100%;
     justify-content: center;
     padding: 20px 0;
-    position: fixed;
     z-index: 20;
-    background: linear-gradient(180deg, rgba(228, 241, 235, 0.80) 78%, rgba(228, 241, 235, 0.00) 100%);
+    position: absolute;
 }
 
 #header-contain {
@@ -405,6 +404,7 @@ h5 {
 
     #nuestro-equipo {
         margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     #header-contain {
@@ -451,7 +451,7 @@ h5 {
     #header-contain {
         gap: 10px;
     }
-    {}
+    
     p {
         font-size: 1.1em;
         padding: 0 20px;
