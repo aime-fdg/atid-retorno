@@ -149,6 +149,10 @@ section {
     gap: 30px;
 }
 
+#bienvenida p {
+    text-wrap: balance;
+}
+
 /*-----------DATOS-----------------------------------*/
 
 #relleno-fondo {
@@ -255,6 +259,7 @@ section {
 
 #atid-activo p {
     font-weight: 400;
+    text-wrap: balance;
 }
 
 #atid-activo a {
@@ -286,7 +291,7 @@ section {
 #nuestro-equipo {
     margin: 100px 0;
     gap: 50px;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     box-sizing: border-box;
 }
 
@@ -354,11 +359,15 @@ h5 {
     display: flex;
     gap: 50px;
     flex-direction: column;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
     align-items: center;
     box-sizing: border-box;
     text-align: center;
     width: 100%;
+}
+
+#contacto p {
+    text-wrap: balance;
 }
 
 #contacto span {
@@ -385,6 +394,8 @@ h5 {
     width: min-content;
     min-width: 260px;
 }
+
+/*-----------MOBILE-----------------------------------*/
 
 @media screen and (max-width: 1000px) {
     #origen div {
